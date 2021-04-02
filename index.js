@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(cors());
 const port = 5000 || process.env.PORT;
 
-
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
     console.log(err)
